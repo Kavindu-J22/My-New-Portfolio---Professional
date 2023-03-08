@@ -24,6 +24,7 @@
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
+                <a href="#info">Info</a>
                 <a href="#service">Service</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
@@ -49,10 +50,147 @@
             <div class="home-img">
                 <img src="images/logoImg .png" alt="">
             </div>
+            
         </section>
         
+        <!-- About Section -->
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/abtimg.png" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About<span> Me</span></h2>
+                <h3>Full-Stack Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+                    fuga sapiente nulla facere sint dolor animi adipisci blanditiis
+                    cupiditate harum corrupti reiciendis temporibus nobis esse possimus
+                    commodi eligendi neque sed, excepturi at. Ratione minus officia,
+                    nulla cumque quas eos? Consectetur corrupti nobis ut veniam alias 
+                    harum.</p>
+
+                    <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+
+        <section class="service" id="service">
+            <h2 class="heading">My <span>Services</span></h2>
+
+            <div class="service-container">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+                
+                <div class="service-box">
+                    <i class='bx bx-crop' ></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bxl-codepen'></i>
+                    <h3>Apps and Software Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bxs-palette' ></i>
+                    <h3>Logo And Grapic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bx-file' ></i>
+                    <h3>Documentation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bxs-terminal' ></i>
+                    <h3>Portfolio Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquid atque, voluptatum aut sunt alias minima odio? Voluptate
+                          repellendus sunt, quod quasi excepturi, culpa iusto quam natus
+                           quibusdam ullam corrupti iure.</p>
+
+                           <a href="" class="abtbtn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="portfolio-container">
+
+                <input type="radio" name="slider" id="s1">
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+                <input type="radio" name="slider" id="s6">
+                <input type="radio" name="slider" id="s7">
+            </div>
+
+            <div class="pcards">
+
+                <label for="s1" id="slide1">
+
+                    <div class="pcard">
+                        <div class="pimage">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </section>
 
         <!-- Custom js -->
+
+        <!-- Vanilla tilts -->
+
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".service-box"),{
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+	        });
+        </script>
+
+        <!-- Other Js -->
         <script src="js/script.js"></script>
 
     </body>
