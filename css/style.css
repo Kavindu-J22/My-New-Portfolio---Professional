@@ -312,8 +312,9 @@ span{
     font-weight: 600;
     color: var(--current-color1);
     margin-bottom: 15px;
-    padding-left: 25%;
+    padding-left: 5%;
     transition: all .6s ease;
+    text-shadow: 0 0 5px #7f7b7b;
 }
 .pcard .lorem{
     font-size: 1.2rem;
