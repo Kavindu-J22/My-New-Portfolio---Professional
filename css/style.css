@@ -148,8 +148,69 @@ span{
 }
 .about-content p{
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 1.5rem 0;
 }
+.about-content .tab-titles{
+    display: flex;
+    width: 100%;
+}
+.about-content .tab-links{
+    cursor: pointer;
+    position: relative;
+    padding-right: 7rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+.tab-contents{
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    
+}
+.tab-contents ul li{
+    list-style:disc;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    transition: .4s ease;
+    color: #d2ccd5;
+}
+.tab-contents ul li:hover{
+    transform: translateY(-10px);
+}
+
+.tab-contents ul li span{
+    color: #68ebfa;
+    font-size: 14px;
+    font-weight: 600;  
+}
+.tab-contents ul li p{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block ;
+}
+
+#gitlink{
+    color: rgb(159, 169, 177);
+}
+.active-link{
+    color: var(--main-color);
+    text-shadow: 0 0 20px;
+}
+
+
+
+
+
+
+
 .service h2{
     margin-bottom: 5rem;
 }
