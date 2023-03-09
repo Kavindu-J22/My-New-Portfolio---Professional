@@ -231,6 +231,7 @@ span{
     flex-direction: column;
     margin-bottom: 100px;
     margin-top: 60px;
+    padding-bottom: 20px;
 }
 .pcards{
     position: relative;
@@ -397,7 +398,7 @@ span{
     padding: 4rem;
     display: grid;
     background: rgba(255, 255, 255, 0.092);
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     gap: 4rem;
     height: 40rem;
     margin: 7rem auto;
@@ -409,6 +410,10 @@ span{
     border-radius: 1rem;
     position: relative;
     bottom: 10rem;
+    transition: .5s ease;
+}
+.contact-aside:hover{
+    transform: translateY(10px);
 }
 .aside-image img{
     width: 20rem;
@@ -437,6 +442,7 @@ span{
     display: flex;
     gap: 0.8rem;
     margin-top: 3rem;
+    width: 100%;
 }
 .contact-socials li{
     list-style: none;
@@ -451,7 +457,6 @@ span{
     border-radius: 50%;
     font-size: 1.5rem;
     color: #fff;
-    margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 .contact-socials a:hover{
@@ -493,4 +498,100 @@ span{
     color: var(--main-color);
     background: transparent;
     box-shadow: none;
+}
+@media screen and (max-width: 1024px) {
+    .pcards label{
+        width: 300px;
+    }
+    .infos .num{
+        font-size: 2rem;
+    }
+    .infos .name{
+        font-size: 1.7rem;
+    }
+    .pcard .lorem{
+        font-size: .8rem;
+    }
+    .pcard .btn-details{
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    .contact{
+        padding-bottom: 0;
+    }
+    .contact-container{
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .contact-aside{
+        width: auto;
+        padding: 1.5ram;
+        bottom: 0;
+    }
+    .contact-form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .pcard .pimage img{
+        width: 86%;
+        height: 100px;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .pcards label{
+        width: 210px;
+    }
+    
+    .infos .name{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .pcard .btn-details{
+        height: 30px;
+        font-size: 1.2rem;
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .contact-form{
+        margin: 0 1.5rem 3rem;
+    }
+    .form-name input[type="text"]{
+        width: 100%;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--secound-bg-color);
+}
+.footer-text p{
+    font-size: 1.4rem;
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .4s ease;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--secound-bg-color);
 }
