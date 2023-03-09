@@ -175,6 +175,8 @@ span{
     backdrop-filter: blur(5px);
     padding: 3rem 2rem 4rem;
     text-align: center;
+    flex-wrap: wrap;
+    align-self: normal;
 }
 .service-box i{
     font-size: 7rem;
@@ -197,7 +199,8 @@ span{
     color: var(--secound-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
-    transition: .5s ease; 
+    transition: .5s ease;
+    margin-top: auto;
 }
 .abtbtn:hover{
     background: transparent;
