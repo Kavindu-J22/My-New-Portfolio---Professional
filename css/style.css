@@ -164,7 +164,7 @@ span{
     flex: 1 1 30rem;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.034);
+    background: rgba(255, 255, 255, 0.066);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,4 +392,105 @@ span{
     transform: translate3d(70%, 0, -220px);
     --current-color1: #8e8991;
     --current-culor2: #7f818d;
-} 
+}
+.contact-container{
+    padding: 4rem;
+    display: grid;
+    background: rgba(255, 255, 255, 0.092);
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 40rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+.contact-aside{
+    background-color: rgb(24, 140, 148);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+.aside-image img{
+    width: 20rem;
+    margin-bottom: 1.5rem;
+}
+.contact-aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+    color: #fff;
+}
+.contact-aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #f0f0f2;  
+}
+.contact-details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+.contact-socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+.contact-socials li{
+    list-style: none;
+}
+.contact-socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--secound-bg-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.contact-socials a:hover{
+    background: transparent;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+.form-name{
+    display: flex;
+    gap: 1.2rem;
+}
+.contact-form input[type="text"]{
+    width: 50%;
+}
+.contact-form input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-color);
+    color: #fff;
+}
+.contact-form .contact-btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 10px 10px 10px;
+    transition: .5s ease;
+}
+.contact-form .contact-btn:hover{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background: transparent;
+    box-shadow: none;
+}
