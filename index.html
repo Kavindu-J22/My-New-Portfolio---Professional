@@ -422,29 +422,27 @@
 
         <script>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents =document.getElementsByClassName("tab-contents");
-         
-        function opentab(tabname){
-            for(tablink of tablinks)
-            {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents)
-            {
-                tabcontent.classList.remove("active-tab");
-            }
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
 
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
         
-         
-
-
-</script>
+        </script>
 
         <script type="text/javascript" src="vanilla-tilt.js"></script>
+
         <script>
             VanillaTilt.init(document.querySelectorAll(".service-box"),{
                 max: 25,
@@ -455,7 +453,8 @@
         </script>
 
         <!-- Other Js -->
-        <script src="js/script.js"></script>
 
+        <script src="js/script.js"></script>
+        
     </body>
 </html>
