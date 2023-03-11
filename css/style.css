@@ -208,7 +208,9 @@ span{
     font-style: italic;
     font-weight: 500;
 }
-
+.tab-contents ul li a{
+    transition: .4s ease;
+}
 .tab-contents{
     display: none;
 }
@@ -219,7 +221,12 @@ span{
 
 #gitlink{
     color: rgb(159, 169, 177);
+    transition: .5s ease;
 }
+#gitlink:hover{
+    color: #acdbf3;
+}
+
 .active-link{
     color: var(--main-color);
     text-shadow: 0 0 20px;
