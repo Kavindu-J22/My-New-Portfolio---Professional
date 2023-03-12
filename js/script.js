@@ -52,7 +52,7 @@ menuIcon.onclick = () => {
     /* -- typed jsl --*/
 
     const typed = new Typed('.multiple-text',{
-        strings: ['Full-Stack Developer', 'UI/UX Designer', 'Grapic Designer', 'Document Creator', 'Software Engineer'],
+        strings: ['Full-Stack Developer', 'UI/UX Designer', 'Grapic Designer', 'Software Engineer', 'Document Creator', 'Concept Creator'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
