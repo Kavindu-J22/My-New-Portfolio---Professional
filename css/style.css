@@ -274,6 +274,7 @@ span{
     font-size: 2.6rem;
 }
 .service-box p{
+    padding: 10px;
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
